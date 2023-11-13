@@ -1,0 +1,462 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+body {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f4f5f6;
+}
+
+.biology {
+    background-image: url('../images/biology.png');
+}
+
+.cs {
+    background-image: url('../images/cs.png');
+}
+
+.economics {
+    background-image: url('../images/economics.png');
+    
+}
+
+.electronic {
+    background-image: url('../images/electronic.png');
+}
+
+.finance {
+    background-image: url('../images/finance.png');
+}
+
+.mathematics {
+    background-image: url('../images/mathematics.png');
+}
+
+.physics {
+    background-image: url('../images/physics.png');
+}
+
+.statistics {
+    background-image: url('../images/statistics.png');
+}
+
+.scsc {
+    background-image: url('../images/scsc.png');
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 0 0 2px;
+    margin: 0;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    background-color: teal;
+    justify-content: left;
+    align-items: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: teal;
+    border-radius: 5px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menu {
+    display: flex;
+    width: 49%;
+    justify-content: left;
+    flex-direction: column;
+}
+
+#menu > section {
+    padding: 10px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#latest-articles {
+    background-color: teal;
+    color: white;
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+h2 > a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 > a:hover {
+    text-decoration: underline;
+}
+
+#main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    display: flex;
+    background-color: teal;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    padding: 5px;
+}
+
+#filter-form {
+    display: flex;
+    align-items: center;
+    background-color: teal;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#filter-form input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#filter-form select {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#filter-form input[type="submit"] {
+    background-color: white;
+    color: teal;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#filter-form input[type="submit"]:hover {
+    background-color: teal;
+    color: white;
+}
+
+.pagearticles {
+    width: 100%;
+}
+
+.pageart {
+    width: calc(50% - 10px); 
+  }
+
+.content {
+    background-color: teal;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+#new-article-link {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    position: absolute;
+    right: calc(5% + 10px);
+    top: 105px;
+    border: 1px solid white;
+}
+
+#new-article-link:hover {
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+}
+
+.page-number {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid white;
+}
+
+.page-number:hover {
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+#links {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+#links:hover {
+    text-decoration: underline;
+}
+
+#comments-section {
+    background-color: teal;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.comment p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.comment strong {
+    font-weight: bold;
+}
+
+.comment em {
+    font-style: italic;
+}
+
+.comment form {
+    margin-top: 10px;
+}
+
+.comment form input[type="submit"] {
+    background-color: white;
+    color: teal;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.comment form input[type="submit"]:hover {
+    background-color: teal;
+    color: white;
+}
+
+.comment textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f4f5f6;
+}
+
+.comment .form-item {
+    text-align: right;
+}
+
+.my-button {
+    background-color: teal;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.my-button:hover {
+    background-color: white;
+    color: teal;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.content > h1,h2 {
+    margin-bottom: 10px;
+}
+
+.gotoreg {
+    color: white;
+    text-decoration: none;
+}
+
+.gotoreg:hover {
+    text-decoration: underline;
+}
+
+.spc {
+    height: 10px;
+}
+
+.marginzatop {
+    margin-top: 10px;
+}
+
+.marginzabot {
+    margin-bottom: 10px;
+}
+
+#forma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: teal;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#forma label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#forma input[type="text"],
+#forma input[type="password"] {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#forma button {
+    background-color: teal;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#forma button:hover {
+    background-color: white;
+    color: teal;
+}
+
+#forma2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: teal;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#forma2 label {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#forma2 input[type="text"],
+#forma2 input[type="date"],
+#forma2 select,
+#forma2 textarea,
+#forma2 input[type="file"],
+#forma2 input[type="checkbox"] {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#forma2 button[type="reset"],
+#forma2 button[type="submit"] {
+    background-color: teal;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#forma2 button[type="reset"]:hover,
+#forma2 button[type="submit"]:hover {
+    background-color: white;
+    color: teal;
+}
+
+#forma2 input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+#forma2 p {
+    color: white;
+    margin-bottom: 10px;
+}
